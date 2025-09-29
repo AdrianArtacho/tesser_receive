@@ -10,10 +10,37 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 45.0, 118.0, 1217.0, 711.0 ],
+		"rect" : [ 1807.0, 87.0, 1217.0, 711.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "live.button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 912.0, 259.0, 15.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 22.0, 165.0, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.button",
+							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "live.button",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.button"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "message",
@@ -49,7 +76,7 @@
 					"patching_rect" : [ 931.0, 296.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 107.0, 100.0, 69.5, 22.0 ],
-					"text" : "100 0",
+					"text" : "25 120",
 					"textjustification" : 1
 				}
 
@@ -485,6 +512,7 @@
 					"patching_rect" : [ 437.818921446800232, 552.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 62.0, 145.0, 108.775587648153305, 22.0 ],
+					"text" : "25 120",
 					"textjustification" : 1
 				}
 
@@ -830,7 +858,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 977.0, 467.0, 50.0, 22.0 ],
-					"text" : "100 0"
+					"text" : "25 120"
 				}
 
 			}
@@ -909,6 +937,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
 					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"order" : 2,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1287,11 +1323,12 @@
 
 			}
  ],
-		"originid" : "pat-210",
+		"originid" : "pat-78",
 		"parameters" : 		{
 			"obj-15" : [ "live.text", "live.text", 0 ],
 			"obj-20" : [ "live.menu[1]", "live.menu[1]", 0 ],
 			"obj-21" : [ "live.text[1]", "live.text[1]", 0 ],
+			"obj-30" : [ "live.button", "live.button", 0 ],
 			"obj-32" : [ "live.menu", "live.menu", 0 ],
 			"obj-5" : [ "textedit", "textedit", 0 ],
 			"obj-8" : [ "live.numbox", "live.numbox", 0 ],
